@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icon/local_shipping_white_24dp.svg</file>
+    <file>icon/add_white_24dp.svg</file>
+    <file>icon/delete_white_24dp.svg</file>
+    <file>icon/edit_white_24dp.svg</file>
+    <file>icon/person_white_24dp.svg</file>
+    <file>icon/shopping_cart_white_24dp.svg</file>
+  </qresource>
+</RCC>

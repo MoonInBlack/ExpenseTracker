@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>506</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Equipment</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #4B0082;
+font-family: Roboto LT;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="lb_equipment">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font-weight: bold;
+font-size: 16pt;
+background-color: none;
+border: none;
+
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Комплектация ДП</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cb_responsible">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+color: white;
+font-size: 10pt;
+font-weight: bold;
+padding-left: 10px;
+}
+
+QComboBox:item {
+color: black;
+}
+
+QComboBox:editable {
+background: #9370DB;
+}
+
+QComboBox:on
+{
+
+color: white; 
+background-color: #4B0082;
+
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Выбрать ответственного</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Васильченко О.С</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Шиповский Е.А</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cb_nomenclature">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+color: white;
+font-size: 10pt;
+font-weight: bold;
+padding-left: 10px;
+}
+
+QComboBox:item {
+color: black;
+}
+
+QComboBox:editable {
+background: #9370DB;
+}
+
+QComboBox:on
+{
+color: white; 
+background-color: #4B0082;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Выбрать номенклатуру</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>ДП 1.2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ДП 1.5</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">font-size: 10pt;
+font-weight: bold;
+color: #FFFF00;
+padding-left: 10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Дата отгрузки</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="shippt_date">
+          <property name="styleSheet">
+           <string notr="true">font-size: 10pt;
+font-weight: bold;
+color: white;
+padding-left: 10px;</string>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="date">
+           <date>
+            <year>2023</year>
+            <month>1</month>
+            <day>1</day>
+           </date>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="le_order_number">
+          <property name="styleSheet">
+           <string notr="true">font-size: 10pt;
+font-weight: bold;
+color: white;
+padding-left: 10px;
+</string>
+          </property>
+          <property name="placeholderText">
+           <string>№ заказа</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="date_order_number">
+          <property name="styleSheet">
+           <string notr="true">font-size: 10pt;
+font-weight: bold;
+color: white;
+padding-left: 10px;</string>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="date">
+           <date>
+            <year>2023</year>
+            <month>1</month>
+            <day>1</day>
+           </date>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="le_number_equipment">
+          <property name="styleSheet">
+           <string notr="true">font-size: 10pt;
+font-weight: bold;
+color: white;
+padding-left: 10px;
+margin-bottom: 20px;
+</string>
+          </property>
+          <property name="placeholderText">
+           <string>№ комплектации</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="date_equipment">
+          <property name="styleSheet">
+           <string notr="true">font-size: 10pt;
+font-weight: bold;
+color: white;
+padding-left: 10px;
+margin-bottom: 20px;</string>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="date">
+           <date>
+            <year>2023</year>
+            <month>1</month>
+            <day>1</day>
+           </date>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QComboBox" name="cb_choose_quantity">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+color: white;
+font-size: 10pt;
+font-weight: bold;
+padding-left: 10px;
+}
+
+QComboBox:item {
+color: black;
+}
+
+QComboBox:editable {
+background: #9370DB;
+}
+
+QComboBox:on
+{
+color: white; 
+background-color: #4B0082;
+}</string>
+          </property>
+          <property name="placeholderText">
+           <string>Выбрать количество</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>1 </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2 </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>12</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>13</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>14</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>15</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="le_area_sq_m">
+          <property name="styleSheet">
+           <string notr="true">font-size: 10pt;
+font-weight: bold;
+color: white;
+padding-left: 10px;</string>
+          </property>
+          <property name="placeholderText">
+           <string>Площадь м.кв</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+color: white;
+background-color: rgba(255,255,255,30);
+border: 1px solid  rgba(255,255,255,40);
+border-radius: 7px;
+width: 230px;
+height: 50px;
+margin-top: 10px;
+
+}
+QPushButton:hover {
+background-color:  rgba(255,255,255,40);
+}
+QPushButton:pressed {
+background-color:  rgba(255,255,255,70);
+}</string>
+        </property>
+        <property name="text">
+         <string>Сохранить и отправить</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../../res-new-window-rc.qrc">
+          <normaloff>:/icon/icon/save_white_24dp.svg</normaloff>:/icon/icon/save_white_24dp.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../../res-new-window-rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
